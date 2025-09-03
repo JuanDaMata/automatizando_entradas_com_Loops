@@ -1,21 +1,21 @@
-const listaEntradas = [];
+const listaNomes = [];
 
 while (true) {
-    const entradaUsuario = prompt("Digite uma coisa por vez quantas vezes quiser, quando satisfeito é só digitar sair.");
+    const entradaUsuario = prompt("Digite um nome por vez quantas vezes quiser, quando satisfeito é só digitar sair.");
 
     if (entradaUsuario.toLowerCase() !== "sair") {
-        listaEntradas.push(entradaUsuario);  
+        listaNomes.push(entradaUsuario);  
     } else {
         break;
     }
 };
 
-for (let index = 0; index < listaEntradas.length; index++) {
-    const entrada = listaEntradas[index];
-    alert(`${index + 1} : ${entrada}`);
+for (let indice = 0; indice < listaNomes.length; indice++) {
+    const nome = listaNomes[indice];
+    alert(`${indice + 1} : ${nome}`);
 };
 
-for (let entrada of listaEntradas) {
-    alert(`Bem vindo(a), ${entrada}!`);
+for (let nome of listaNomes) {
+    alert(`Bem-vindo(a), ${nome}!`);
 };
 
